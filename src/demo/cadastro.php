@@ -15,10 +15,12 @@ use Illuminate\Support\Facades\Mail;
 use stdClass;
 use Carbon\Carbon;
 
+    /**
+     * This file was created by Daniel X. Don't remove this credits.
+     */
 class cadastrar extends Controller
 {
   
-
     protected $token, $user, $usertemp, $log,$pattern = '/[\'\/~`\!@#\$%\^&\*\(\)_\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/';
     protected $recaptcha = true;
     protected $confirmar_token = true;
