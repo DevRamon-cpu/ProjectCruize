@@ -128,8 +128,8 @@ class cadastrar extends Controller
                     'password' =>  $UserTemp->password,
                     'create_data' => $current_timestamp,
                     'email' =>  $UserTemp->mail,
-                    'gp' => (int)$UserTemp->gold,
-                    'money' => (int)$UserTemp->cash,
+                    'gp' => (int)$this->config->gold,
+                    'money' => (int)$this->config->cash,
                     'remember_token' => null
                 ];
                 $created = $this->db::create($data);
